@@ -1,0 +1,14 @@
+service:
+  paco:
+    container_name: paco_cont
+    build: .
+    volume:
+      - 42cursus:/42cursus/
+
+volumes:
+  42cursus:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '~/42cursus/'
