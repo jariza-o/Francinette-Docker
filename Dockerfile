@@ -2,7 +2,7 @@ FROM python:3.10-bookworm
 
 RUN apt update -y && apt upgrade -y
 
-RUN apt install -y curl pipx python3-setuptools
+RUN apt install -y curl pipx python3-setuptools clang
 
 RUN python3 -m pip install --upgrade pip setuptools
 
